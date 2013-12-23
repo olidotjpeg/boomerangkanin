@@ -1,0 +1,44 @@
+.header {
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	text-align: center;
+	.top-nav {
+		background-color: $main-brand;
+		display: none;
+		@media #{$medium-up} {
+			display: block;
+		}
+		a {
+			color: #fff;
+			line-height: 50px;
+			display: block;
+			@media #{$medium-up} {
+				width: 15%;
+				display: inline-block;
+			}
+			&:hover {
+				color: $secondary-brand;
+			}
+		}
+	}
+}
+
+.mobile-menu {
+	display: block;
+	font-size: 25px;
+	color: #fff;
+	padding: 10px 0;
+	background-color: $main-brand;
+	@media #{$medium-up} {
+		display: none;
+	}
+}
+
+
+.top-nav {
+	&.is-open {
+		display: block!important;
+	}
+}
